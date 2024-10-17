@@ -25,6 +25,15 @@ export default function RootLayout({
     return (
         <StrictMode>
             <html lang="en">
+                <head>
+                    <link rel="manifest" href="/site.webmanifest" />
+                    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9" />
+                    <meta name="apple-mobile-web-app-title" content="Helen Williamson Books" />
+                    <meta name="application-name" content="Helen Williamson Books" />
+                    <meta name="msapplication-TileColor" content="#00aba9" />
+                    <meta name="msapplication-config" content="/browserconfig.xml" />
+                    <meta name="theme-color" content="#ffffff" />
+                </head>
                 <body className={quattrocentoSans.variable}>
                     <div id="header" className={quattrocentoSans.className}>
                         <Link href="/">Helen Williamson Books</Link>

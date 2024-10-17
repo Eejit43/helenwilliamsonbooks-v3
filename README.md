@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Eejit43/helenwilliamsonbooks-v3/main/public/icon.png" alt="Helen Williamson Books Logo (Mouse)" width="30"/> Helen Williamson Books
+# <img src="https://raw.githubusercontent.com/Eejit43/helenwilliamsonbooks-v3/main/app/icon.png" alt="Helen Williamson Books Logo (Mouse)" width="30"/> Helen Williamson Books
 
 ![Helen Williamson Books Header](https://raw.githubusercontent.com/Eejit43/helenwilliamsonbooks-v3/main/public/images/header.png)
 
