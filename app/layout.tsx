@@ -2,18 +2,22 @@ import { quattrocentoSans } from '@/app/ui/fonts';
 import { config as fontAwesomeConfig } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 import { StrictMode } from 'react';
 
 import '@/app/ui/styles.css';
+import booksData from './books-data';
 
 fontAwesomeConfig.autoAddCss = false;
 
+export const viewport: Viewport = { themeColor: '#fffeed', colorScheme: 'light' };
+
 export const metadata: Metadata = {
-    title: 'Helen Williamson Books',
+    title: { template: '%s | Helen Williamson Books', default: 'Helen Williamson Books' },
     description:
         "Welcome to Helen Williamson's enchanting tales for children of all ages. If you love dinosaurs who wear polka dot slippers, if you have pineapple dreams, higgledy-piggledy thoughts or like to escape into fairy tales, you'll love Helen's whimsical world. There's no other world quite like it!",
+    keywords: ['Helen Williamson', 'Helen L. Williamson', ...booksData.map((book) => book.title)],
     robots: { index: true, follow: true },
 };
 
@@ -27,12 +31,6 @@ export default function RootLayout({
             <html lang="en">
                 <head>
                     <link rel="manifest" href="/site.webmanifest" />
-                    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9" />
-                    <meta name="apple-mobile-web-app-title" content="Helen Williamson Books" />
-                    <meta name="application-name" content="Helen Williamson Books" />
-                    <meta name="msapplication-TileColor" content="#00aba9" />
-                    <meta name="msapplication-config" content="/browserconfig.xml" />
-                    <meta name="theme-color" content="#ffffff" />
                 </head>
                 <body className={quattrocentoSans.variable}>
                     <div id="header" className={quattrocentoSans.className}>

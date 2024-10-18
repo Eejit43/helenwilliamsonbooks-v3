@@ -207,6 +207,10 @@ hr {
 }
 
 /* Books Page */
+.book-image {
+    width: 100%;
+}
+
 .book-grid {
     --grid-columns: 1fr 2fr;
 

@@ -19,7 +19,11 @@ function PopupTooltip({ text, title }: { text: string; title: string }) {
 export function BookImage({ bookId }: { bookId: BookId }) {
     const foundBook = booksData.find((book) => book.id === bookId)!;
 
-    return <Image src={foundBook.image} alt={`${foundBook.title} Cover`} />;
+    return (
+        <div>
+            <Image className="book-image" src={foundBook.image} alt={`${foundBook.title} Cover`} />
+        </div>
+    );
 }
 
 export default function BookInfo({ bookData }: { bookData: Book }) {

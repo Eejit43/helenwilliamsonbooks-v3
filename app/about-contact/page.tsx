@@ -2,8 +2,11 @@ import ContactForm from '@/app/about-contact/contact-form';
 import helenLWilliamsonImage from '@/public/images/helen-l-williamson.jpg';
 import belleIsleBooksLogo from '@/public/images/logos/belle-isle-books.png';
 import nancyTaylorAtkinsImage from '@/public/images/nancy-taylor-atkins.jpg';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';
+
+export const metadata: Metadata = { title: 'About & Contact' };
 
 export default function AboutAndContact() {
     return (
