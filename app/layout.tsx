@@ -14,10 +14,19 @@ fontAwesomeConfig.autoAddCss = false;
 export const viewport: Viewport = { themeColor: '#fffeed', colorScheme: 'light' };
 
 export const metadata: Metadata = {
+    metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`),
+    alternates: { canonical: './' },
     title: { template: '%s | Helen Williamson Books', default: 'Helen Williamson Books' },
     description:
         "Welcome to Helen Williamson's enchanting tales for children of all ages. If you love dinosaurs who wear polka dot slippers, if you have pineapple dreams, higgledy-piggledy thoughts or like to escape into fairy tales, you'll love Helen's whimsical world. There's no other world quite like it!",
     keywords: ['Helen Williamson', 'Helen L. Williamson', ...booksData.map((book) => book.title)],
+    openGraph: {
+        url: './',
+        siteName: 'Helen Williamson Books',
+        locale: 'en_US',
+        type: 'website',
+    },
+    manifest: '/site.webmanifest',
     robots: { index: true, follow: true },
 };
 
@@ -29,9 +38,6 @@ export default function RootLayout({
     return (
         <StrictMode>
             <html lang="en">
-                <head>
-                    <link rel="manifest" href="/site.webmanifest" />
-                </head>
                 <body className={quattrocentoSans.variable}>
                     <div id="header" className={quattrocentoSans.className}>
                         <Link href="/">Helen Williamson Books</Link>
