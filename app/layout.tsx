@@ -14,7 +14,7 @@ fontAwesomeConfig.autoAddCss = false;
 export const viewport: Viewport = { themeColor: '#fffeed', colorScheme: 'light' };
 
 export const metadata: Metadata = {
-    metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`),
+    metadataBase: new URL('helenwilliamsonbooks.com'),
     alternates: { canonical: './' },
     title: { template: '%s | Helen Williamson Books', default: 'Helen Williamson Books' },
     description:
