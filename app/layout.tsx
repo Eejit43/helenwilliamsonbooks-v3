@@ -14,7 +14,7 @@ fontAwesomeConfig.autoAddCss = false;
 export const viewport: Viewport = { themeColor: '#fffeed', colorScheme: 'light' };
 
 export const metadata: Metadata = {
-    metadataBase: new URL('helenwilliamsonbooks.com'),
+    metadataBase: new URL('https://helenwilliamsonbooks.com'),
     alternates: { canonical: './' },
     title: { template: '%s | Helen Williamson Books', default: 'Helen Williamson Books' },
     description:
