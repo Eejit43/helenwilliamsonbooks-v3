@@ -5,6 +5,7 @@ import belleIsleBooksLogo from '@/public/images/logos/belle-isle-books.png';
 import booksAMillionLogo from '@/public/images/logos/books-a-million.png';
 import bookshopLogo from '@/public/images/logos/bookshop.png';
 import Image from 'next/image';
+import Link from 'next/link';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
@@ -32,7 +33,7 @@ export default function BookInfo({ bookData }: { bookData: Book }) {
             <BookImage bookId={bookData.id} />
             <div>
                 <h2 className="title-link">
-                    <a href={`#${bookData.id}`}>{bookData.title}</a>
+                    <Link href={{ hash: bookData.id }}>{bookData.title}</Link>
                 </h2>
 
                 <div className="book-description">{bookData.description}</div>

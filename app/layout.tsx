@@ -1,3 +1,4 @@
+import booksData from '@/app/books-data';
 import { quattrocentoSans } from '@/app/ui/fonts';
 import { config as fontAwesomeConfig } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -7,7 +8,6 @@ import Link from 'next/link';
 import { StrictMode } from 'react';
 
 import '@/app/ui/styles.css';
-import booksData from './books-data';
 
 fontAwesomeConfig.autoAddCss = false;
 

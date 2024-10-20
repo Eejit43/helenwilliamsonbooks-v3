@@ -1,3 +1,4 @@
+import { BookLink } from '@/app/page';
 import aPineappleDreamAndOtherNonsenseCover from '@/public/images/books/a-pineapple-dream-and-other-nonsense.png';
 import adventuresInDinglewoodCover from '@/public/images/books/adventures-in-dinglewood.png';
 import higgledyPiggledyThoughtsCover from '@/public/images/books/higgledy-piggledy-thoughts.png';
@@ -35,11 +36,7 @@ export default [
         image: talesFromBalladhoon2Cover,
         description: (
             <>
-                The{' '}
-                <a href="#tales-from-balladhoon" className="book-link">
-                    original Tales from Balladhoon
-                </a>
-                , reimagined with new illustrations, and two more original stories!
+                The original <BookLink bookId="tales-from-balladhoon" />, reimagined with new illustrations, and two more original stories!
                 <hr />
                 Join Johnny McGlory and his friends on a delightful journey through the Irish countryside, where fairies and leprechauns are
                 as real as the donkey that walks under the sea and the magician who summons butterflies.

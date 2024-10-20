@@ -5,9 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
 
-function BookLink({ bookId }: { bookId: BookId }) {
+export function BookLink({ bookId }: { bookId: BookId }) {
     return (
-        <Link href={`/books#${bookId}`} className="book-link">
+        <Link href={{ pathname: '/books', hash: bookId }} className="book-link">
             {booksData.find((book) => book.id === bookId)!.title}
         </Link>
     );
