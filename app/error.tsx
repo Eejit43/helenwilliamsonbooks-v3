@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 export default function Error({ error }: { error: Error & { digest?: string } }) {
-    console.log(error, error.name, error.message, error.digest);
-
     return (
         <div className="error-page-container">
             <h2>
