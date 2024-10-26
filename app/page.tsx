@@ -17,9 +17,9 @@ export default function Home() {
     return (
         <>
             <div className="welcome">
-                Welcome to Helen Williamson's enchanting tales for children of all ages. If you love dinosaurs who wear polka dot slippers,
-                if you have pineapple dreams, higgledy-piggledy thoughts or like to escape into fairy tales, you'll love Helen's whimsical
-                world. There's no other quite like it!
+                Welcome to Helen Williamson&apos;s enchanting tales for children of all ages. If you love dinosaurs who wear polka dot
+                slippers, if you have pineapple dreams, higgledy-piggledy thoughts or like to escape into fairy tales, you&apos;ll love
+                Helen&apos;s whimsical world. There&apos;s no other quite like it!
             </div>
 
             <div className="grid" style={{ '--grid-columns': '1fr 3fr' } as CSSProperties}>
@@ -74,15 +74,15 @@ export default function Home() {
                 <div>
                     <p>
                         If you are in a hurry, you might pass by Dinglewood without paying much attention. But if you listen carefully, you
-                        just might hear the pitter-patter of small feet and the chattering of tiny voices. Turn the page— There's a world of
-                        adventure here in Dinglewood for you to discover!
+                        just might hear the pitter-patter of small feet and the chattering of tiny voices. Turn the page— There&apos;s a
+                        world of adventure here in Dinglewood for you to discover!
                     </p>
 
                     <hr />
 
                     <p>
-                        “. . . Adventures in Dinglewood is sure to take its place alongside many long-loved children's books as a delightful
-                        modern classic.”
+                        “. . . Adventures in Dinglewood is sure to take its place alongside many long-loved children&apos;s books as a
+                        delightful modern classic.”
                     </p>
                     <p>
                         <i>— Kai Rady, Toy and Book Buyer, Shenanigans (est. 1974), Charlottesville, VA, USA</i>
@@ -92,8 +92,8 @@ export default function Home() {
 
                     <p>
                         “Helen Williamson and Nancy Atkins charm young readers with the magical adventures of Henrietta and Jasper as they
-                        encounter Dinglewood's many zany woodland creatures. . . Adventures in Dinglewood would be a wonderful addition to
-                        any child's bookshelf.”
+                        encounter Dinglewood&apos;s many zany woodland creatures. . . Adventures in Dinglewood would be a wonderful addition
+                        to any child&apos;s bookshelf.”
                     </p>
                     <p>
                         <i>— Anna Burger, author of Pea Soup and the Seafood Feast and The Sea Hunt</i>

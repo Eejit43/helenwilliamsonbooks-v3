@@ -65,9 +65,9 @@ export default [
         image: adventuresInDinglewoodCover,
         description: (
             <>
-                "If you are in a hurry, you might pass by Dinglewood without paying much attention. But if you listen carefully, you just
-                might hear the pitter-patter of small feet and the chattering of tiny voices. Turn the page—There's a world of adventure
-                here in Dinglewood for you to discover!
+                If you are in a hurry, you might pass by Dinglewood without paying much attention. But if you listen carefully, you just
+                might hear the pitter-patter of small feet and the chattering of tiny voices. Turn the page—There&apos;s a world of
+                adventure here in Dinglewood for you to discover!
             </>
         ),
         prices: { paperback: 17.95, hardcover: 26.95 },
@@ -89,10 +89,10 @@ export default [
         image: iJustMetADinosaurCover,
         description: (
             <>
-                "If you met a dinosaur, what would you do? Play hide-and-seek or go to the zoo? Who knows if their skin was pink, purple, or
+                If you met a dinosaur, what would you do? Play hide-and-seek or go to the zoo? Who knows if their skin was pink, purple, or
                 blue? Or if they squawked, roared, or mooed? Did they polish their nails and feathers and scales, and sharpen their teeth
-                with the ends of their tails? When you open this book of dinosaur rhymes, you'll meet some of those creatures from long-ago
-                times!
+                with the ends of their tails? When you open this book of dinosaur rhymes, you&apos;ll meet some of those creatures from
+                long-ago times!
             </>
         ),
         prices: { hardcover: 18.95 },
@@ -138,15 +138,15 @@ export default [
                 encourage their imagination as they read or listen to the poems and see the detailed drawings.
                 <br />
                 <br />
-                It's Nonsense, it's Fun,
+                It&apos;s Nonsense, it&apos;s Fun,
                 <br />
                 It tickles you tongue.
                 <br />
-                There's a mouse that knits
+                There&apos;s a mouse that knits
                 <br />
                 And a cat that sits.
                 <br />
-                There's a whale you'll adore
+                There&apos;s a whale you&apos;ll adore
                 <br />
                 And a whole lot more.
                 <br />
