@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     alternates: { canonical: './' },
     title: { template: '%s | Helen Williamson Books', default: 'Helen Williamson Books' },
     description:
-        "Welcome to Helen Williamson's enchanting tales for children of all ages. If you love dinosaurs who wear polka dot slippers, if you have pineapple dreams, higgledy-piggledy thoughts or like to escape into fairy tales, you'll love Helen's whimsical world. There's no other world quite like it!",
+        "Welcome to Helen Williamson's enchanting tales for children of all ages. If you like to escape into fairy tales, you'll love Helen's whimsical world.",
     keywords: ['Helen Williamson', 'Helen L. Williamson', ...booksData.map((book) => book.title)],
     openGraph: {
         url: './',
@@ -40,7 +40,9 @@ export default function RootLayout({
             <html lang="en">
                 <body className={quattrocentoSans.variable}>
                     <div id="header" className={quattrocentoSans.className}>
-                        <Link href="/">Helen Williamson Books</Link>
+                        <h1>
+                            <Link href="/">Helen Williamson Books</Link>
+                        </h1>
                         <nav>
                             <ul>
                                 <li>

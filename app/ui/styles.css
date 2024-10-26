@@ -136,8 +136,9 @@ hr {
         font-size: 25px;
     }
 
-    & > a {
+    & h1 a {
         color: var(--neutral-color-500);
+        font-weight: bold;
     }
 
     & nav {
