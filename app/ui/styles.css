@@ -214,6 +214,7 @@ hr {
 
 .book-grid {
     --grid-columns: 1fr 2fr;
+
     scroll-margin-top: 20px;
 
     & .title-link a {

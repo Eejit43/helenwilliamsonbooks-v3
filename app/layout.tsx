@@ -39,7 +39,7 @@ export default function RootLayout({
         <StrictMode>
             <html lang="en">
                 <body className={quattrocentoSans.variable}>
-                    <div id="header" className={quattrocentoSans.className}>
+                    <div id="header">
                         <h1>
                             <Link href="/">Helen Williamson Books</Link>
                         </h1>
