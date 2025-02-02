@@ -19,22 +19,22 @@
         "next": "^15.1.6",
         "nodemailer": "^6.10.0",
         "react": "^19.0.0",
-        "react-bootstrap": "^2.10.8",
+        "react-bootstrap": "^2.10.9",
         "react-dom": "^19.0.0",
         "react-google-recaptcha": "^3.1.0",
         "sharp": "^0.33.5",
-        "sonner": "^1.7.2"
+        "sonner": "^1.7.4"
     },
     "devDependencies": {
         "@eejit/prettier-config": "^3.3.0",
         "@eejit/stylelint-config": "^5.0.0",
-        "@types/node": "^22.10.10",
+        "@types/node": "^22.13.0",
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
         "eslint": "^9.19.0",
         "eslint-config-next": "^15.1.6",
-        "stylelint": "^16.14.0",
+        "stylelint": "^16.14.1",
         "typescript": "^5.7.3"
     },
     "overrides": {
