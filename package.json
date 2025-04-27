@@ -28,7 +28,7 @@
     "devDependencies": {
         "@eejit/prettier-config": "^3.4.0",
         "@eejit/stylelint-config": "^5.0.0",
-        "@types/node": "^22.15.2",
+        "@types/node": "latest",
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
