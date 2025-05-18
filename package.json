@@ -32,7 +32,7 @@
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
-        "eslint": "^9.26.0",
+        "eslint": "^9.27.0",
         "eslint-config-next": "^15.3.2",
         "stylelint": "^16.19.1",
         "typescript": "^5.8.3"
