@@ -22,7 +22,7 @@
         "react-bootstrap": "^2.10.10",
         "react-dom": "^19.1.0",
         "react-google-recaptcha": "^3.1.0",
-        "sharp": "^0.34.2",
+        "sharp": "^0.34.1",
         "sonner": "^2.0.3"
     },
     "devDependencies": {
