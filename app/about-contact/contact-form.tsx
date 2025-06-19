@@ -17,11 +17,11 @@ export default function ContactForm() {
         if (!event.currentTarget.checkValidity()) event.preventDefault();
     }
 
-    const recaptchaRef = useRef(null as unknown as ReCAPTCHA);
-    const recaptchaResultRef = useRef(null as unknown as HTMLInputElement);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
+    const recaptchaResultRef = useRef<HTMLInputElement>(null);
 
     function handleReCAPTCHAChange(token: string | null) {
-        recaptchaResultRef.current.value = token ?? '';
+        recaptchaResultRef.current!.value = token ?? '';
     }
 
     const [response, formAction, isPending] = useActionState<SubmitResponse, FormData>(submitForm, {
@@ -34,12 +34,12 @@ export default function ContactForm() {
             case 'success': {
                 toast.success('Message sent successfully!');
                 setValidated(false);
-                recaptchaRef.current.reset();
+                recaptchaRef.current!.reset();
                 break;
             }
             case 'captcha-failure': {
                 toast.error('Failed to verify captcha!');
-                recaptchaRef.current.reset();
+                recaptchaRef.current!.reset();
                 break;
             }
             case 'error': {
