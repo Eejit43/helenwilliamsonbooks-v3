@@ -20,7 +20,7 @@
         "@types/nodemailer": "^6.4.17",
         "bootstrap": "^5.3.7",
         "nanoid": "^5.1.5",
-        "next": "^15.3.5",
+        "next": "^15.4.2",
         "nodemailer": "^7.0.5",
         "react": "^19.1.0",
         "react-bootstrap": "^2.10.10",
@@ -37,8 +37,8 @@
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
         "eslint": "^9.31.0",
-        "eslint-config-next": "^15.3.5",
-        "stylelint": "^16.21.1",
+        "eslint-config-next": "^15.4.2",
+        "stylelint": "^16.22.0",
         "typescript": "^5.8.3"
     }
 }
