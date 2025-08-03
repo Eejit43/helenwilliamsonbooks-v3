@@ -20,25 +20,25 @@
         "@types/nodemailer": "^6.4.17",
         "bootstrap": "^5.3.7",
         "nanoid": "^5.1.5",
-        "next": "^15.4.4",
+        "next": "^15.4.5",
         "nodemailer": "^7.0.5",
-        "react": "^19.1.0",
+        "react": "^19.1.1",
         "react-bootstrap": "^2.10.10",
-        "react-dom": "^19.1.0",
+        "react-dom": "^19.1.1",
         "react-google-recaptcha": "^3.1.0",
         "sharp": "^0.34.3",
-        "sonner": "^2.0.6"
+        "sonner": "^2.0.7"
     },
     "devDependencies": {
         "@eejit/prettier-config": "^3.5.0",
-        "@eejit/stylelint-config": "^5.0.0",
+        "@eejit/stylelint-config": "^6.0.0",
         "@types/node": "latest",
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
         "eslint": "^9.32.0",
-        "eslint-config-next": "^15.4.4",
-        "stylelint": "^16.22.0",
-        "typescript": "^5.8.3"
+        "eslint-config-next": "^15.4.5",
+        "stylelint": "^16.23.0",
+        "typescript": "^5.9.2"
     }
 }
