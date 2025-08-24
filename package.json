@@ -16,11 +16,11 @@
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^7.0.0",
         "@fortawesome/free-regular-svg-icons": "^7.0.0",
-        "@fortawesome/react-fontawesome": "^0.2.3",
-        "@types/nodemailer": "^7.0.0",
+        "@fortawesome/react-fontawesome": "^3.0.0",
+        "@types/nodemailer": "^7.0.1",
         "bootstrap": "^5.3.7",
         "nanoid": "^5.1.5",
-        "next": "^15.4.6",
+        "next": "^15.5.0",
         "nodemailer": "^7.0.5",
         "react": "^19.1.1",
         "react-bootstrap": "^2.10.10",
@@ -36,8 +36,8 @@
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
-        "eslint": "^9.33.0",
-        "eslint-config-next": "^15.4.6",
+        "eslint": "^9.34.0",
+        "eslint-config-next": "^15.5.0",
         "stylelint": "^16.23.1",
         "typescript": "^5.9.2"
     }
