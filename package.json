@@ -20,7 +20,7 @@
         "@types/nodemailer": "^7.0.1",
         "bootstrap": "^5.3.8",
         "nanoid": "^5.1.5",
-        "next": "^15.5.2",
+        "next": "^15.5.3",
         "nodemailer": "^7.0.6",
         "react": "^19.1.1",
         "react-bootstrap": "^2.10.10",
@@ -37,7 +37,7 @@
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
         "eslint": "^9.35.0",
-        "eslint-config-next": "^15.5.2",
+        "eslint-config-next": "^15.5.3",
         "stylelint": "^16.24.0",
         "typescript": "^5.9.2"
     }
