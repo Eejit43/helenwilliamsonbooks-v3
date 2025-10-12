@@ -21,7 +21,7 @@
         "bootstrap": "^5.3.8",
         "nanoid": "^5.1.6",
         "next": "^15.5.4",
-        "nodemailer": "^7.0.6",
+        "nodemailer": "^7.0.9",
         "react": "^19.2.0",
         "react-bootstrap": "^2.10.10",
         "react-dom": "^19.2.0",
