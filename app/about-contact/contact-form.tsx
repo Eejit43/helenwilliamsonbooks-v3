@@ -33,7 +33,7 @@ export default function ContactForm() {
         switch (response.message) {
             case 'success': {
                 toast.success('Message sent successfully!');
-                setValidated(false);
+                setValidated(false); // eslint-disable-line react-hooks/set-state-in-effect
                 recaptchaRef.current!.reset();
                 break;
             }
