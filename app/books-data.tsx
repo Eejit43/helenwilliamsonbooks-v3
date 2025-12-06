@@ -6,6 +6,7 @@ import iJustMetADinosaurCover from '@/public/images/books/i-just-met-a-dinosaur.
 import talesFromBalladhoon2Cover from '@/public/images/books/tales-from-balladhoon-2.png';
 import talesFromBalladhoonCover from '@/public/images/books/tales-from-balladhoon.png';
 import type { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import type { JSX } from 'react';
 
 export interface Book {
@@ -154,6 +155,9 @@ const booksData = [
                 So, my friends, find a cozy nook
                 <br />
                 And plunge headlong into this book.
+                <br />
+                <br />
+                This book can be listened to as <Link href="/audiobooks">an audiobook</Link> (password-protected).
             </>
         ),
         prices: { paperback: 15.95 },
@@ -176,6 +180,9 @@ const booksData = [
                 These original Irish tales by Irish native Helen L. Williamson, are a delightful glimpse into the world of imagination and
                 an introduction to the time honored craft of Irish storytelling. These books are sure to capture the hearts of both young
                 and old.
+                <br />
+                <br />
+                This book can be listened to as <Link href="/audiobooks">an audiobook</Link> (password-protected).
             </>
         ),
         prices: { paperback: 12.95 },
