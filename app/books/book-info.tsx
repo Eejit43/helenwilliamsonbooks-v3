@@ -22,7 +22,7 @@ export function BookImage({ bookId }: { bookId: BookId }) {
 
     return (
         <div>
-            <Image className="book-image" src={foundBook.image} alt={`${foundBook.title} Cover`} />
+            <Image alt={`${foundBook.title} Cover`} className="book-image" src={foundBook.image} />
         </div>
     );
 }
@@ -70,27 +70,27 @@ export default function BookInfo({ bookData }: { bookData: Book }) {
                 <div className="purchase-links">
                     {'belleIsleBooks' in bookData.urls && (
                         <a href={bookData.urls.belleIsleBooks} rel="noopener noreferrer" target="_blank">
-                            <Image src={belleIsleBooksLogo} alt="Belle Isle Books Logo" />
+                            <Image alt="Belle Isle Books Logo" src={belleIsleBooksLogo} />
                         </a>
                     )}
                     {'bookshop' in bookData.urls && (
                         <a href={bookData.urls.bookshop} rel="noopener noreferrer" target="_blank">
-                            <Image src={bookshopLogo} alt="Bookshop.org Logo" />
+                            <Image alt="Bookshop.org Logo" src={bookshopLogo} />
                         </a>
                     )}
                     {'booksAMillion' in bookData.urls && (
                         <a href={bookData.urls.booksAMillion} rel="noopener noreferrer" target="_blank">
-                            <Image src={booksAMillionLogo} alt="Books-A-Million Logo" />
+                            <Image alt="Books-A-Million Logo" src={booksAMillionLogo} />
                         </a>
                     )}
                     {'barnesAndNoble' in bookData.urls && (
                         <a href={bookData.urls.barnesAndNoble} rel="noopener noreferrer" target="_blank">
-                            <Image src={barnesAndNobleLogo} alt="Barnes and Noble Logo" />
+                            <Image alt="Barnes and Noble Logo" src={barnesAndNobleLogo} />
                         </a>
                     )}
                     {'amazon' in bookData.urls && (
                         <a href={bookData.urls.amazon} rel="noopener noreferrer" target="_blank">
-                            <Image src={amazonLogo} alt="Amazon Logo" />
+                            <Image alt="Amazon Logo" src={amazonLogo} />
                         </a>
                     )}
                 </div>

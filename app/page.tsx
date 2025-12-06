@@ -1,4 +1,4 @@
-import booksData, { BookId } from '@/app/books-data';
+import booksData, { type BookId } from '@/app/books-data';
 import { BookImage } from '@/app/books/book-info';
 import helenLWilliamsonImage from '@/public/images/helen-l-williamson.jpg';
 import Image from 'next/image';
@@ -7,7 +7,7 @@ import type { CSSProperties } from 'react';
 
 export function BookLink({ bookId }: { bookId: BookId }) {
     return (
-        <Link href={{ pathname: '/books', hash: bookId }} className="book-link">
+        <Link className="book-link" href={{ pathname: '/books', hash: bookId }}>
             {booksData.find((book) => book.id === bookId)!.title}
         </Link>
     );
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
 
             <div className="grid" style={{ '--grid-columns': '1fr 3fr' } as CSSProperties}>
-                <Image src={helenLWilliamsonImage} alt="Helen L. Williamson" />
+                <Image alt="Helen L. Williamson" src={helenLWilliamsonImage} />
                 <div>
                     <p>
                         Helen was born in Holywood, County Down in Northern Ireland. In the Irish tradition, books and the telling of tales
@@ -81,8 +81,8 @@ export default function Home() {
                     <hr />
 
                     <p>
-                        “. . . Adventures in Dinglewood is sure to take its place alongside many long-loved children&apos;s books as a
-                        delightful modern classic.”
+                        “.&#x200A;.&#x200A;. Adventures in Dinglewood is sure to take its place alongside many long-loved children&apos;s
+                        books as a delightful modern classic.”
                     </p>
                     <p>
                         <i>— Kai Rady, Toy and Book Buyer, Shenanigans (est. 1974), Charlottesville, VA, USA</i>
@@ -92,8 +92,8 @@ export default function Home() {
 
                     <p>
                         “Helen Williamson and Nancy Atkins charm young readers with the magical adventures of Henrietta and Jasper as they
-                        encounter Dinglewood&apos;s many zany woodland creatures. . . Adventures in Dinglewood would be a wonderful addition
-                        to any child&apos;s bookshelf.”
+                        encounter Dinglewood&apos;s many zany woodland creatures.&#x200A;.&#x200A;. Adventures in Dinglewood would be a
+                        wonderful addition to any child&apos;s bookshelf.”
                     </p>
                     <p>
                         <i>— Anna Burger, author of Pea Soup and the Seafood Feast and The Sea Hunt</i>

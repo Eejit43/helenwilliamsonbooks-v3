@@ -1,7 +1,7 @@
 'use client';
 
 import submitForm, { type SubmitResponse } from '@/app/about-contact/submit-form';
-import { FormEvent, useActionState, useEffect, useRef, useState } from 'react';
+import { type FormEvent, useActionState, useEffect, useRef, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Spinner from 'react-bootstrap/Spinner';
@@ -17,11 +17,11 @@ export default function ContactForm() {
         if (!event.currentTarget.checkValidity()) event.preventDefault();
     }
 
-    const recaptchaRef = useRef<ReCAPTCHA>(null);
-    const recaptchaResultRef = useRef<HTMLInputElement>(null);
+    const reCaptchaReference = useRef<ReCAPTCHA>(null);
+    const reCaptchaResultReference = useRef<HTMLInputElement>(null);
 
-    function handleReCAPTCHAChange(token: string | null) {
-        recaptchaResultRef.current!.value = token ?? '';
+    function handleReCaptchaChange(token: string | null) {
+        reCaptchaResultReference.current!.value = token ?? '';
     }
 
     const [response, formAction, isPending] = useActionState<SubmitResponse, FormData>(submitForm, {
@@ -34,12 +34,12 @@ export default function ContactForm() {
             case 'success': {
                 toast.success('Message sent successfully!');
                 setValidated(false); // eslint-disable-line react-hooks/set-state-in-effect
-                recaptchaRef.current!.reset();
+                reCaptchaReference.current!.reset();
                 break;
             }
             case 'captcha-failure': {
                 toast.error('Failed to verify captcha!');
-                recaptchaRef.current!.reset();
+                reCaptchaReference.current!.reset();
                 break;
             }
             case 'error': {
@@ -57,16 +57,16 @@ export default function ContactForm() {
                     <p>This form requires JavaScript to function properly! Please enable it and reload!</p>
                 </div>
             </noscript>
-            <Form className="row g-3" validated={validated} onSubmit={handleSubmit} action={formAction} noValidate>
+            <Form action={formAction} className="row g-3" validated={validated} noValidate onSubmit={handleSubmit}>
                 <Form.Group controlId="name">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
-                        name="name"
-                        type="text"
-                        style={{ width: '50%' }}
                         autoComplete="name"
                         defaultValue={response.data.name}
                         disabled={isPending}
+                        name="name"
+                        style={{ width: '50%' }}
+                        type="text"
                         required
                     />
                     <Form.Control.Feedback type="invalid">Please include your name!</Form.Control.Feedback>
@@ -74,12 +74,12 @@ export default function ContactForm() {
                 <Form.Group controlId="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
-                        name="email"
-                        type="email"
-                        style={{ width: '50%' }}
                         autoComplete="email"
                         defaultValue={response.data.email}
                         disabled={isPending}
+                        name="email"
+                        style={{ width: '50%' }}
+                        type="email"
                         required
                     />
                     <Form.Control.Feedback type="invalid">Invalid email!</Form.Control.Feedback>
@@ -87,37 +87,41 @@ export default function ContactForm() {
                 <Form.Group controlId="message">
                     <Form.Label>Message</Form.Label>
                     <Form.Control
-                        name="message"
                         as="textarea"
-                        rows={6}
                         defaultValue={response.data.message}
                         disabled={isPending}
+                        name="message"
+                        rows={6}
                         required
                     />
                     <Form.Control.Feedback type="invalid">Please add a message!</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="recaptcha-response">
-                    <ReCAPTCHA ref={recaptchaRef} sitekey="6LcEIsgdAAAAAKsmlmaoN1znHBjYrpKqPV5Wl01L" onChange={handleReCAPTCHAChange} />
+                    <ReCAPTCHA
+                        ref={reCaptchaReference}
+                        sitekey="6LcEIsgdAAAAAKsmlmaoN1znHBjYrpKqPV5Wl01L"
+                        onChange={handleReCaptchaChange}
+                    />
                     <Form.Control
-                        name="recaptcha-response"
-                        ref={recaptchaResultRef}
+                        ref={reCaptchaResultReference}
                         className="d-none"
                         defaultValue={response.data.recaptchaResponse}
                         disabled={isPending}
+                        name="recaptcha-response"
                         required
                     />
                     <Form.Control.Feedback type="invalid">Please complete the reCAPTCHA!</Form.Control.Feedback>
                 </Form.Group>
                 <div>
-                    <Button type="submit" disabled={isPending}>
+                    <Button disabled={isPending} type="submit">
                         Submit form{' '}
                         <Spinner
-                            as="span"
                             animation="border"
-                            size="sm"
-                            role="status"
                             aria-hidden={true}
-                            className={isPending ? '' : 'd-none'}>
+                            as="span"
+                            className={isPending ? '' : 'd-none'}
+                            role="status"
+                            size="sm">
                             <span className="visually-hidden">Loading...</span>
                         </Spinner>
                     </Button>

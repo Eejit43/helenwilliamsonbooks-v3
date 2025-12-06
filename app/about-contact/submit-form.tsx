@@ -48,7 +48,7 @@ export default async function submitForm(previousResponse: SubmitResponse, formD
     ].join('');
 
     const mailOptions = {
-        from: `"Helen Williamson Books" <${process.env.EMAIL_USER}>`,
+        from: `"Helen Williamson Books" <${process.env.EMAIL_USERNAME}>`,
         to: process.env.DESTINATION_EMAIL,
         cc: process.env.CARBON_COPY_EMAIL,
         subject: 'Contact form submission - Helen Williamson Books',

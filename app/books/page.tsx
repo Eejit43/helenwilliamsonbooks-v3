@@ -6,11 +6,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = { title: 'Books' };
 
 export default function Books() {
-    const mappedBookData = booksData.map((bookData) => (
-        <div className="grid book-grid" key={nanoid()} id={bookData.id}>
+    return booksData.map((bookData) => (
+        <div key={nanoid()} className="grid book-grid" id={bookData.id}>
             <BookInfo bookData={bookData} />
         </div>
     ));
-
-    return mappedBookData;
 }

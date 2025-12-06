@@ -23,6 +23,8 @@
 
     /* General Colors */
     --background-color-light: #fffeed;
+    --background-color-tint: #fffff8;
+    --background-color-tint-border: #e9e9e6;
     --neutral-color-100: #a3b3bf;
     --neutral-color-200: #6a7f8d;
     --neutral-color-300: #3f5d73;
@@ -285,4 +287,60 @@ hr {
         transform: scale(0.8);
         transform-origin: 0 0;
     }
+}
+
+/* Audiobooks Page */
+.audiobook-player-row {
+    gap: 30px;
+}
+
+.audiobooks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.audiobook-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+
+    & > svg {
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    & h3 {
+        margin-bottom: 0;
+
+        & svg {
+            margin-bottom: 1px;
+            margin-left: 4px;
+            font-size: 15px;
+        }
+    }
+}
+
+.audiobook-tracks {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.audiobook-track {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: 2px solid var(--background-color-tint-border);
+    border-radius: 5px;
+    background-color: var(--background-color-tint);
+    padding: 4px;
+    font-size: 18px;
+}
+
+.audiobook-player-container {
+    position: fixed;
+    width: 100%;
 }

@@ -13,7 +13,7 @@ export default function AboutAndContact() {
         <>
             <h2>About Us</h2>
             <div className="grid" style={{ '--grid-columns': '1fr 4fr' } as CSSProperties}>
-                <Image src={helenLWilliamsonImage} alt="Helen L. Williamson" />
+                <Image alt="Helen L. Williamson" src={helenLWilliamsonImage} />
                 <div>
                     <h3>Helen Williamson, Author</h3>
                     <p>
@@ -42,7 +42,7 @@ export default function AboutAndContact() {
             </div>
 
             <div className="grid" style={{ '--grid-columns': '1fr 4fr' } as CSSProperties}>
-                <Image src={nancyTaylorAtkinsImage} alt="Nancy Taylor Atkins" />
+                <Image alt="Nancy Taylor Atkins" src={nancyTaylorAtkinsImage} />
                 <div>
                     <h3>Nancy Taylor Atkins, Illustrator</h3>
                     <p>
@@ -50,8 +50,7 @@ export default function AboutAndContact() {
                         worked in an experiential outdoor program for at-risk youth. In addition to owning a local nutritional store, Nancy
                         enjoys creating with clay, paint, and mixed media. She has participated in art shows and has been commissioned to
                         make tiled installations. She is the illustrator of <i>A Pineapple Dream and Other Nonsense</i>,{' '}
-                        <i>Higgledy-Piggledy Thoughts</i>, <i>I Just Met A Dinosaur!</i>, <i>Adventures In Dinglewood</i>, and{' '}
-                        <i>Tales from Balladhoon</i> (2).
+                        <i>Higgledy-Piggledy Thoughts</i>, <i>I Just Met A Dinosaur!</i>, and <i>Adventures In Dinglewood</i>.
                     </p>
                 </div>
             </div>
@@ -65,7 +64,7 @@ export default function AboutAndContact() {
                     804-644-3090<b>.</b>
                 </div>
                 <a href="http://www.belleislebooks.com" target="_blank">
-                    <Image src={belleIsleBooksLogo} alt="Belle Isle Books Logo" />
+                    <Image alt="Belle Isle Books Logo" src={belleIsleBooksLogo} />
                 </a>
             </div>
         </>

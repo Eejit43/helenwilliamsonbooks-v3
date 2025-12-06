@@ -18,7 +18,7 @@ export interface Book {
     dimensions: { width: number; height: number };
     published: { year: number; publisher: string };
     isbn: { 10?: string; 13?: string };
-    urls: { belleIsleBooks?: string; bookshop?: string; booksAMillion?: string; barnesAndNoble?: string; amazon?: string };
+    urls: { belleIsleBooks?: string; bookshop?: string; booksAMillion?: string; barnesAndNoble?: string; amazon?: string }; // eslint-disable-line @typescript-eslint/naming-convention
 }
 
 export type BookId =
@@ -29,7 +29,7 @@ export type BookId =
     | 'a-pineapple-dream-and-other-nonsense'
     | 'tales-from-balladhoon';
 
-export default [
+const booksData = [
     {
         id: 'tales-from-balladhoon-2',
         title: 'Tales from Balladhoon',
@@ -78,7 +78,7 @@ export default [
         urls: {
             belleIsleBooks: 'http://www.belleislebooks.com/store/p121/adventuresindinglewood.html',
             bookshop: 'https://bookshop.org/p/books/adventures-in-dinglewood-helen-l-williamson/9758773',
-            booksAMillion: 'https://www.booksamillion.com/p/9781947860131',
+            booksAMillion: 'https://www.booksamillion.com/p/9781947860131', // eslint-disable-line @typescript-eslint/naming-convention
             barnesAndNoble: 'https://www.barnesandnoble.com/w/1129189888',
             amazon: 'https://www.amazon.com/dp/1947860216',
         },
@@ -112,9 +112,9 @@ export default [
         image: higgledyPiggledyThoughtsCover,
         description: (
             <>
-                Have you thought of a goat . . .
+                Have you thought of a goat&#x200A;.&#x200A;.&#x200A;.
                 <br />
-                . . . in a fancy coat?
+                .&#x200A;.&#x200A;.&#x200A;in a fancy coat?
                 <br />
                 Or a hen that could only <i>SNORE</i>?<br />
                 <br />
@@ -186,3 +186,7 @@ export default [
         urls: { amazon: 'https://www.amazon.com/dp/0981925200' },
     },
 ] satisfies Book[] as Book[];
+
+export default booksData;
+
+export const idToTitleMap = Object.fromEntries(booksData.map((book) => [book.id, book.title]));
