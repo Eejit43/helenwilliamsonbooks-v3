@@ -7,9 +7,10 @@ interface Properties {
     track: string;
     password: string;
     setIsPlaying: Dispatch<SetStateAction<boolean>>;
+    onEnd: () => void;
 }
 
-export default function AudioPlayer({ ref, album, track, password, setIsPlaying }: Properties) {
+export default function AudioPlayer({ ref, album, track, password, setIsPlaying, onEnd }: Properties) {
     if (!album || !track) return <>Select a track or album to start playing!</>;
 
     return (
@@ -22,6 +23,7 @@ export default function AudioPlayer({ ref, album, track, password, setIsPlaying 
                 src={`/api/audiobook?track=${encodeURIComponent(`${track} - ${album}`)}&password=${encodeURIComponent(password)}`}
                 onEnd={() => {
                     setIsPlaying(false);
+                    onEnd();
                 }}
                 onPause={() => {
                     setIsPlaying(false);

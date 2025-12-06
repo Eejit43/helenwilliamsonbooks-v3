@@ -1,5 +1,6 @@
 :root {
     /* Main Colors */
+    --main-color-50: #d6ecfa;
     --main-color-100: #accee5;
     --main-color-200: #7aaacc;
     --main-color-300: #4680a9;
@@ -23,8 +24,6 @@
 
     /* General Colors */
     --background-color-light: #fffeed;
-    --background-color-tint: #fffff8;
-    --background-color-tint-border: #e9e9e6;
     --neutral-color-100: #a3b3bf;
     --neutral-color-200: #6a7f8d;
     --neutral-color-300: #3f5d73;
@@ -324,7 +323,7 @@ hr {
 
 .audiobook-tracks {
     display: grid;
-    gap: 5px;
+    gap: 8px;
     margin-bottom: 10px;
 }
 
@@ -333,11 +332,21 @@ hr {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    border: 2px solid var(--background-color-tint-border);
+    border: 2px solid var(--main-color-300);
     border-radius: 5px;
-    background-color: var(--background-color-tint);
-    padding: 4px;
+    background-color: var(--main-color-50);
+    padding: 6px;
     font-size: 18px;
+    text-align: center;
+
+    &.audiobook-track-active {
+        border-color: var(--main-color-300);
+        background-color: var(--main-color-100);
+    }
+
+    & .audiobook-track-duration {
+        margin-left: auto;
+    }
 }
 
 .audiobook-player-container {

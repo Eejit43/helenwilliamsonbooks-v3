@@ -16,7 +16,7 @@ export default function AudiobooksForm() {
     const [hasValidPassword, setHasValidPassword] = useState(false);
 
     const [currentAlbum, setCurrentAlbum] = useState('');
-    const [currentTrack, setCurrentTrack] = useState('');
+    const [currentTrack, setCurrentTrack] = useState({ index: -1, name: '' });
 
     const [isPlaying, setIsPlaying] = useState(false);
     const isPlayingReference = useRef(isPlaying);
@@ -27,7 +27,7 @@ export default function AudiobooksForm() {
 
     const playerReference = useRef<AudioPlayerRef>(null);
 
-    const playTrack = async (album?: string, track?: string) => {
+    const playTrack = async (album?: string, track?: { index: number; name: string }) => {
         if (isPlayingReference.current) {
             setIsPlaying(false);
             isPlayingReference.current = false;
@@ -48,6 +48,17 @@ export default function AudiobooksForm() {
         playerReference.current?.pause();
     };
 
+    const handleTrackEnd = () => {
+        const foundAlbum = audioTracks.find((album) => album.title === currentAlbum);
+        if (!foundAlbum) return;
+
+        if (currentTrack.index === foundAlbum.tracks.length - 1) return;
+
+        const nextTrack = foundAlbum.tracks[currentTrack.index + 1];
+
+        void playTrack(currentAlbum, { index: currentTrack.index + 1, name: nextTrack.name });
+    };
+
     return (
         <>
             <h2>Audiobooks</h2>
@@ -60,7 +71,8 @@ export default function AudiobooksForm() {
                                     <FontAwesomeIcon
                                         icon={currentAlbum === album.title && isPlaying ? faPauseCircle : faPlayCircle}
                                         onClick={() => {
-                                            if (currentAlbum !== album.title) void playTrack(album.title, album.tracks[0].name);
+                                            if (currentAlbum !== album.title)
+                                                void playTrack(album.title, { index: 0, name: album.tracks[0].name });
                                             else if (isPlaying) pauseTrack();
                                             else void playTrack();
                                         }}
@@ -73,20 +85,21 @@ export default function AudiobooksForm() {
                                     </h3>
                                 </div>
                                 <div className="audiobook-tracks">
-                                    {album.tracks.map((track) => {
-                                        const isActive = currentAlbum === album.title && currentTrack === track.name;
+                                    {album.tracks.map((track, index) => {
+                                        const isActive = currentAlbum === album.title && currentTrack.name === track.name;
 
                                         return (
                                             <div
                                                 key={track.key}
-                                                className="audiobook-track"
+                                                className={`audiobook-track${isActive ? ' audiobook-track-active' : ''}`}
                                                 onClick={() => {
-                                                    if (!isActive) void playTrack(album.title, track.name);
+                                                    if (!isActive) void playTrack(album.title, { index, name: track.name });
                                                     else if (isPlaying) pauseTrack();
                                                     else void playTrack();
                                                 }}>
                                                 <FontAwesomeIcon icon={isActive && isPlaying ? faPauseCircle : faPlayCircle} />
-                                                {track.name}
+                                                <div>{track.name}</div>
+                                                <div className="audiobook-track-duration">{track.duration}</div>
                                             </div>
                                         );
                                     })}
@@ -100,7 +113,8 @@ export default function AudiobooksForm() {
                             album={currentAlbum}
                             password={password}
                             setIsPlaying={setIsPlaying}
-                            track={currentTrack}
+                            track={currentTrack.name}
+                            onEnd={handleTrackEnd}
                         />
                     </Col>
                 </Row>
