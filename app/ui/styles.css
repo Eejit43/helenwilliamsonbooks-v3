@@ -290,13 +290,28 @@ hr {
 
 /* Audiobooks Page */
 .audiobook-player-row {
-    gap: 30px;
+    display: flex;
+    gap: 80px;
+
+    @media (width <= 700px) {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
 }
 
 .audiobooks {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    mask-image: linear-gradient(to bottom, black 90%, transparent);
+    padding-right: 12px;
+    max-height: calc(100vh - 300px);
+    overflow-y: scroll;
+
+    @media (width <= 700px) {
+        max-height: none;
+        overflow-y: visible;
+    }
 }
 
 .audiobook-header {
@@ -350,6 +365,41 @@ hr {
 }
 
 .audiobook-player-container {
-    position: fixed;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .book-image {
+        max-width: 200px;
+    }
+
+    @media (width <= 700px) {
+        position: static;
+    }
+
+    .rap-container {
+        width: 400px;
+
+        @media (width <= 700px) {
+            width: 100%;
+        }
+
+        .rap-controls {
+            font-size: 14px;
+            font-family: monospace !important;
+        }
+    }
+}
+
+.audiobook-player-title-container {
+    text-align: center;
+
+    .audiobook-player-title {
+        font-weight: bold;
+    }
+
+    .audiobook-player-album {
+        font-style: italic;
+    }
 }
