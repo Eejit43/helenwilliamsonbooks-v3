@@ -16,7 +16,9 @@ if (sharedRuleOverrides) {
     if (namingConventionRule && Array.isArray(namingConventionRule)) namingConventionRule[1].format.push('StrictPascalCase');
 }
 
-export default defineConfig([...eslintNextVitals, ...eslintNextTypescript], sharedConfig, {
+const filteredSharedConfig = sharedConfig.filter((config) => config.name !== 'typescript-eslint/base');
+
+export default defineConfig([...eslintNextVitals, ...eslintNextTypescript], filteredSharedConfig, {
     languageOptions: { parserOptions: { project: ['./tsconfig.json'] } },
     rules: {
         'jsdoc/require-jsdoc': 'off',
