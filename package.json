@@ -14,8 +14,8 @@
         "@types/react-dom": "npm:types-react-dom@rc"
     },
     "dependencies": {
-        "@aws-sdk/client-s3": "^3.956.0",
-        "@aws-sdk/s3-request-presigner": "^3.956.0",
+        "@aws-sdk/client-s3": "^3.958.0",
+        "@aws-sdk/s3-request-presigner": "^3.958.0",
         "@fortawesome/fontawesome-svg-core": "^7.1.0",
         "@fortawesome/free-regular-svg-icons": "^7.1.0",
         "@fortawesome/free-solid-svg-icons": "^7.1.0",
@@ -23,8 +23,8 @@
         "@types/nodemailer": "^7.0.4",
         "bootstrap": "^5.3.8",
         "nanoid": "^5.1.6",
-        "next": "^16.1.0",
-        "nodemailer": "^7.0.11",
+        "next": "^16.1.1",
+        "nodemailer": "^7.0.12",
         "react": "^19.2.3",
         "react-audio-play": "^1.0.4",
         "react-bootstrap": "^2.10.10",
@@ -42,7 +42,7 @@
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
         "eslint": "^9.39.2",
-        "eslint-config-next": "^16.1.0",
+        "eslint-config-next": "^16.1.1",
         "stylelint": "^16.26.1",
         "typescript": "^5.9.3"
     }
