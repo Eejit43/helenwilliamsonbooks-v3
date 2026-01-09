@@ -14,8 +14,8 @@
         "@types/react-dom": "npm:types-react-dom@rc"
     },
     "dependencies": {
-        "@aws-sdk/client-s3": "^3.962.0",
-        "@aws-sdk/s3-request-presigner": "^3.962.0",
+        "@aws-sdk/client-s3": "^3.965.0",
+        "@aws-sdk/s3-request-presigner": "^3.965.0",
         "@fortawesome/fontawesome-svg-core": "^7.1.0",
         "@fortawesome/free-regular-svg-icons": "^7.1.0",
         "@fortawesome/free-solid-svg-icons": "^7.1.0",
@@ -35,7 +35,7 @@
     },
     "devDependencies": {
         "@eejit/eslint-config-typescript": "^16.0.1",
-        "@eejit/prettier-config": "^3.6.1",
+        "@eejit/prettier-config": "^3.6.2",
         "@eejit/stylelint-config": "^6.0.0",
         "@types/node": "latest",
         "@types/react": "npm:types-react@rc",
