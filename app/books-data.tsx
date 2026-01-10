@@ -1,10 +1,10 @@
-import { BookLink } from '@/app/page';
-import aPineappleDreamAndOtherNonsenseCover from '@/public/images/books/a-pineapple-dream-and-other-nonsense.png';
-import adventuresInDinglewoodCover from '@/public/images/books/adventures-in-dinglewood.png';
-import higgledyPiggledyThoughtsCover from '@/public/images/books/higgledy-piggledy-thoughts.png';
-import iJustMetADinosaurCover from '@/public/images/books/i-just-met-a-dinosaur.png';
-import talesFromBalladhoon2Cover from '@/public/images/books/tales-from-balladhoon-2.png';
-import talesFromBalladhoonCover from '@/public/images/books/tales-from-balladhoon.png';
+import { BookLink } from '@app/page';
+import aPineappleDreamAndOtherNonsenseCover from '@images/books/a-pineapple-dream-and-other-nonsense.png';
+import adventuresInDinglewoodCover from '@images/books/adventures-in-dinglewood.png';
+import higgledyPiggledyThoughtsCover from '@images/books/higgledy-piggledy-thoughts.png';
+import iJustMetADinosaurCover from '@images/books/i-just-met-a-dinosaur.png';
+import talesFromBalladhoon2Cover from '@images/books/tales-from-balladhoon-2.png';
+import talesFromBalladhoonCover from '@images/books/tales-from-balladhoon.png';
 import type { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import type { JSX } from 'react';

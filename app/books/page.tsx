@@ -1,5 +1,5 @@
-import booksData from '@/app/books-data';
-import BookInfo from '@/app/books/book-info';
+import booksData from '@app/books-data';
+import BookInfo from '@app/books/book-info';
 import { nanoid } from 'nanoid';
 import type { Metadata } from 'next';
 

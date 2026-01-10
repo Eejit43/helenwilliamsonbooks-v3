@@ -1,7 +1,7 @@
-import ContactForm from '@/app/about-contact/contact-form';
-import helenLWilliamsonImage from '@/public/images/helen-l-williamson.jpg';
-import belleIsleBooksLogo from '@/public/images/logos/belle-isle-books.png';
-import nancyTaylorAtkinsImage from '@/public/images/nancy-taylor-atkins.jpg';
+import ContactForm from '@app/about-contact/contact-form';
+import helenLWilliamsonImage from '@images/helen-l-williamson.jpg';
+import belleIsleBooksLogo from '@images/logos/belle-isle-books.png';
+import nancyTaylorAtkinsImage from '@images/nancy-taylor-atkins.jpg';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import type { CSSProperties } from 'react';

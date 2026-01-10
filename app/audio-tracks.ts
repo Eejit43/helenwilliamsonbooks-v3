@@ -1,4 +1,4 @@
-import { type BookId, idToTitleMap } from '@/app/books-data';
+import { type BookId, idToTitleMap } from '@app/books-data';
 
 const audioTracks = (
     [

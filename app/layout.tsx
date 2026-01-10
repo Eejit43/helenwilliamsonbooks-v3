@@ -1,5 +1,5 @@
-import booksData from '@/app/books-data';
-import { quattrocentoSans } from '@/app/ui/fonts';
+import booksData from '@app/books-data';
+import { quattrocentoSans } from '@app/ui/fonts';
 import { config as fontAwesomeConfig } from '@fortawesome/fontawesome-svg-core';
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ import { StrictMode } from 'react';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import '@/app/ui/styles.css';
+import '@app/ui/styles.css';
 
 fontAwesomeConfig.autoAddCss = false;
 

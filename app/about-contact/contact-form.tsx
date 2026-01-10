@@ -1,6 +1,6 @@
 'use client';
 
-import submitForm, { type SubmitResponse } from '@/app/about-contact/submit-form';
+import submitForm, { type SubmitResponse } from '@app/about-contact/submit-form';
 import { type FormEvent, useActionState, useEffect, useRef, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';

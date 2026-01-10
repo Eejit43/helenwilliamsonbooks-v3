@@ -1,8 +1,8 @@
 'use client';
 
-import audioTracks from '@/app/audio-tracks';
-import AudioPlayer from '@/app/audiobooks/audio-player';
-import PasswordForm from '@/app/audiobooks/password-form';
+import audioTracks from '@app/audio-tracks';
+import AudioPlayer from '@app/audiobooks/audio-player';
+import PasswordForm from '@app/audiobooks/password-form';
 import { faPauseCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons';
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

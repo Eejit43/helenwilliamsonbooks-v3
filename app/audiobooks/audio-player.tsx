@@ -1,5 +1,5 @@
-import type { BookId } from '@/app/books-data';
-import { BookImage } from '@/app/books/book-info';
+import type { BookId } from '@app/books-data';
+import { BookImage } from '@app/books/book-info';
 import type { Dispatch, RefObject, SetStateAction } from 'react';
 import { type AudioPlayerRef, AudioPlayer as ReactAudioPlayer } from 'react-audio-play';
 

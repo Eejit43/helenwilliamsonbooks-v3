@@ -1,9 +1,9 @@
-import booksData, { type Book, type BookId } from '@/app/books-data';
-import amazonLogo from '@/public/images/logos/amazon.png';
-import barnesAndNobleLogo from '@/public/images/logos/barnes-and-noble.png';
-import belleIsleBooksLogo from '@/public/images/logos/belle-isle-books.png';
-import booksAMillionLogo from '@/public/images/logos/books-a-million.png';
-import bookshopLogo from '@/public/images/logos/bookshop.png';
+import booksData, { type Book, type BookId } from '@app/books-data';
+import amazonLogo from '@images/logos/amazon.png';
+import barnesAndNobleLogo from '@images/logos/barnes-and-noble.png';
+import belleIsleBooksLogo from '@images/logos/belle-isle-books.png';
+import booksAMillionLogo from '@images/logos/books-a-million.png';
+import bookshopLogo from '@images/logos/bookshop.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';

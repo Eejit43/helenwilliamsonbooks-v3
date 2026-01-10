@@ -1,6 +1,6 @@
-import booksData, { type BookId } from '@/app/books-data';
-import { BookImage } from '@/app/books/book-info';
-import helenLWilliamsonImage from '@/public/images/helen-l-williamson.jpg';
+import booksData, { type BookId } from '@app/books-data';
+import { BookImage } from '@app/books/book-info';
+import helenLWilliamsonImage from '@images/helen-l-williamson.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';

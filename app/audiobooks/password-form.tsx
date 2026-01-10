@@ -1,6 +1,6 @@
 'use client';
 
-import submitForm, { type SubmitResponse } from '@/app/audiobooks/login-handler';
+import submitForm, { type SubmitResponse } from '@app/audiobooks/login-handler';
 import Link from 'next/link';
 import { type Dispatch, type SetStateAction, useActionState, useEffect } from 'react';
 import { Button, Col, Form, Row, Spinner } from 'react-bootstrap';
