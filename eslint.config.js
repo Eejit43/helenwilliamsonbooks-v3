@@ -1,5 +1,6 @@
 // @ts-check
 
+import importAlias from '@dword-design/eslint-plugin-import-alias';
 import sharedConfig from '@eejit/eslint-config-typescript';
 import eslintNextVitals from 'eslint-config-next/core-web-vitals';
 import eslintNextTypescript from 'eslint-config-next/typescript';
@@ -18,13 +19,23 @@ if (sharedRuleOverrides) {
 
 const filteredSharedConfig = sharedConfig.filter((config) => config.name !== 'typescript-eslint/base');
 
-export default defineConfig([...eslintNextVitals, ...eslintNextTypescript], filteredSharedConfig, {
-    languageOptions: { parserOptions: { project: ['./tsconfig.json'] } },
-    rules: {
-        'jsdoc/require-jsdoc': 'off',
-        ...(namingConventionRule ? { '@typescript-eslint/naming-convention': namingConventionRule } : {}),
-        'react/jsx-pascal-case': 'warn',
-        'react/jsx-sort-props': ['warn', { callbacksLast: true, shorthandLast: true, reservedFirst: true }],
-        'react/self-closing-comp': 'warn',
+export default defineConfig(
+    [...eslintNextVitals, ...eslintNextTypescript],
+    filteredSharedConfig,
+    {
+        languageOptions: { parserOptions: { project: ['./tsconfig.json'] } },
+        rules: {
+            'jsdoc/require-jsdoc': 'off',
+            ...(namingConventionRule ? { '@typescript-eslint/naming-convention': namingConventionRule } : {}),
+            'react/jsx-pascal-case': 'warn',
+            'react/jsx-sort-props': ['warn', { callbacksLast: true, shorthandLast: true, reservedFirst: true }],
+            'react/self-closing-comp': 'warn',
+        },
     },
-});
+    importAlias.configs.recommended,
+    {
+        rules: {
+            '@dword-design/import-alias/prefer-alias': ['error', { aliasForSubpaths: true }],
+        },
+    },
+);
