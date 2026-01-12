@@ -14,13 +14,13 @@
         "@types/react-dom": "npm:types-react-dom@rc"
     },
     "dependencies": {
-        "@aws-sdk/client-s3": "^3.965.0",
-        "@aws-sdk/s3-request-presigner": "^3.965.0",
+        "@aws-sdk/client-s3": "^3.966.0",
+        "@aws-sdk/s3-request-presigner": "^3.966.0",
         "@fortawesome/fontawesome-svg-core": "^7.1.0",
         "@fortawesome/free-regular-svg-icons": "^7.1.0",
         "@fortawesome/free-solid-svg-icons": "^7.1.0",
         "@fortawesome/react-fontawesome": "^3.1.1",
-        "@types/nodemailer": "^7.0.4",
+        "@types/nodemailer": "^7.0.5",
         "bootstrap": "^5.3.8",
         "nanoid": "^5.1.6",
         "next": "^16.1.1",
