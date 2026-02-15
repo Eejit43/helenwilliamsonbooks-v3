@@ -14,11 +14,11 @@
         "@types/react-dom": "npm:types-react-dom@rc"
     },
     "dependencies": {
-        "@aws-sdk/client-s3": "^3.985.0",
-        "@aws-sdk/s3-request-presigner": "^3.985.0",
-        "@fortawesome/fontawesome-svg-core": "^7.1.0",
-        "@fortawesome/free-regular-svg-icons": "^7.1.0",
-        "@fortawesome/free-solid-svg-icons": "^7.1.0",
+        "@aws-sdk/client-s3": "^3.990.0",
+        "@aws-sdk/s3-request-presigner": "^3.990.0",
+        "@fortawesome/fontawesome-svg-core": "^7.2.0",
+        "@fortawesome/free-regular-svg-icons": "^7.2.0",
+        "@fortawesome/free-solid-svg-icons": "^7.2.0",
         "@fortawesome/react-fontawesome": "^3.2.0",
         "@types/nodemailer": "^7.0.9",
         "bootstrap": "^5.3.8",
@@ -44,7 +44,7 @@
         "@types/react-google-recaptcha": "^2.1.9",
         "eslint": "^10.0.0",
         "eslint-config-next": "^16.1.6",
-        "stylelint": "^17.1.1",
+        "stylelint": "^17.3.0",
         "typescript": "^5.9.3"
     }
 }
