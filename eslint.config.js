@@ -4,7 +4,7 @@ import importAlias from '@dword-design/eslint-plugin-import-alias';
 import sharedConfig from '@eejit/eslint-config-typescript';
 import eslintNextVitals from 'eslint-config-next/core-web-vitals';
 import eslintNextTypescript from 'eslint-config-next/typescript';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 const sharedRuleOverrides = sharedConfig.find((config) => !config.name && config.plugins && config.rules);
 
@@ -20,9 +20,11 @@ if (sharedRuleOverrides) {
 const filteredSharedConfig = sharedConfig.filter((config) => config.name !== 'typescript-eslint/base');
 
 export default defineConfig(
+    globalIgnores(['.next', 'eslint.config.js', 'next.config.mjs']),
     [...eslintNextVitals, ...eslintNextTypescript],
     filteredSharedConfig,
     {
+        settings: { react: { version: '19' } },
         languageOptions: { parserOptions: { project: ['./tsconfig.json'] } },
         rules: {
             'jsdoc/require-jsdoc': 'off',
