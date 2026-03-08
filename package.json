@@ -14,8 +14,8 @@
         "@types/react-dom": "npm:types-react-dom@rc"
     },
     "dependencies": {
-        "@aws-sdk/client-s3": "^3.1000.0",
-        "@aws-sdk/s3-request-presigner": "^3.1000.0",
+        "@aws-sdk/client-s3": "^3.1004.0",
+        "@aws-sdk/s3-request-presigner": "^3.1004.0",
         "@fortawesome/fontawesome-svg-core": "^7.2.0",
         "@fortawesome/free-regular-svg-icons": "^7.2.0",
         "@fortawesome/free-solid-svg-icons": "^7.2.0",
@@ -35,14 +35,14 @@
     },
     "devDependencies": {
         "@dword-design/eslint-plugin-import-alias": "^8.1.3",
-        "@eejit/eslint-config-typescript": "^16.0.1",
+        "@eejit/eslint-config-typescript": "^17.0.0",
         "@eejit/prettier-config": "^3.6.2",
         "@eejit/stylelint-config": "^6.0.0",
         "@types/node": "latest",
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
-        "eslint": "^10.0.2",
+        "eslint": "^10.0.3",
         "eslint-config-next": "^16.1.6",
         "stylelint": "^17.4.0",
         "typescript": "^5.9.3"
