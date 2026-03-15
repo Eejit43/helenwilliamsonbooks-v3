@@ -20,7 +20,7 @@ if (sharedRuleOverrides) {
 const filteredSharedConfig = sharedConfig.filter((config) => config.name !== 'typescript-eslint/base');
 
 export default defineConfig(
-    globalIgnores(['.next', 'eslint.config.js', 'next.config.mjs']),
+    globalIgnores(['.next', 'next.config.mjs']),
     [...eslintNextVitals, ...eslintNextTypescript],
     filteredSharedConfig,
     {
