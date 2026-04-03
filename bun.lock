@@ -29,7 +29,6 @@
         "@eejit/eslint-config-typescript": "^18.0.0",
         "@eejit/prettier-config": "^3.6.2",
         "@eejit/stylelint-config": "^6.0.0",
-        "@types/node": "latest",
         "@types/react": "npm:types-react@rc",
         "@types/react-dom": "npm:types-react-dom@rc",
         "@types/react-google-recaptcha": "^2.1.9",
