@@ -77,7 +77,7 @@ const booksData = [
         published: { year: 2018, publisher: 'Belle Isle Books' },
         isbn: { 10: '1947860216', 13: '9781947860216' },
         urls: {
-            belleIsleBooks: 'http://www.belleislebooks.com/store/p121/adventuresindinglewood.html',
+            belleIsleBooks: 'https://www.belleislebooks.com/store/p121/adventuresindinglewood.html',
             bookshop: 'https://bookshop.org/p/books/adventures-in-dinglewood-helen-l-williamson/9758773',
             booksAMillion: 'https://www.booksamillion.com/p/9781947860131', // eslint-disable-line @typescript-eslint/naming-convention
             barnesAndNoble: 'https://www.barnesandnoble.com/w/1129189888',
@@ -102,7 +102,7 @@ const booksData = [
         published: { year: 2016, publisher: 'Belle Isle Books' },
         isbn: { 10: '1939930677', 13: '9781939930675' },
         urls: {
-            belleIsleBooks: 'http://www.belleislebooks.com/store/p93/I_Just_Met_a_Dinosaur!.html',
+            belleIsleBooks: 'https://www.belleislebooks.com/store/p93/I_Just_Met_a_Dinosaur!.html',
             barnesAndNoble: 'https://www.barnesandnoble.com/w/1124812119',
             amazon: 'https://www.amazon.com/dp/1939930677',
         },

@@ -23,7 +23,7 @@ export async function GET(request: NextRequest) {
 
     if (!track || !allTrackKeys.includes(track)) return notFound();
 
-    const getObjectCommand = new GetObjectCommand({ Bucket: process.env.S3_BUCKET!, Key: `${track}.mp3` });
+    const getObjectCommand = new GetObjectCommand({ Bucket: process.env.S3_BUCKET!, Key: `${track}.mp3` }); // eslint-disable-line unicorn/no-non-function-verb-prefix
 
     const signedUrl = await getSignedUrl(client, getObjectCommand, { expiresIn: 3600 });
 

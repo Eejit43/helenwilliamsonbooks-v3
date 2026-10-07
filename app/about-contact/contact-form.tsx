@@ -20,6 +20,7 @@ export default function ContactForm() {
     const reCaptchaReference = useRef<ReCAPTCHA>(null);
     const reCaptchaResultReference = useRef<HTMLInputElement>(null);
 
+    // eslint-disable-next-line unicorn/prefer-default-parameters
     function handleReCaptchaChange(token: string | null) {
         reCaptchaResultReference.current!.value = token ?? '';
     }

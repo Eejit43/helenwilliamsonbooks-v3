@@ -33,7 +33,7 @@ export default function AboutAndContact() {
                             Goodreads
                         </a>{' '}
                         and{' '}
-                        <a href="http://www.belleislebooks.com/helenlwilliamson.html" target="_blank">
+                        <a href="https://www.belleislebooks.com/helenlwilliamson.html" target="_blank">
                             Belle Isle Books
                         </a>
                         .
@@ -63,7 +63,7 @@ export default function AboutAndContact() {
                     <b>For more information or to arrange an interview with the author, email</b> brandylanepr@gmail.com <b>or call</b>{' '}
                     804-644-3090<b>.</b>
                 </div>
-                <a href="http://www.belleislebooks.com" target="_blank">
+                <a href="https://www.belleislebooks.com" target="_blank">
                     <Image alt="Belle Isle Books Logo" src={belleIsleBooksLogo} />
                 </a>
             </div>

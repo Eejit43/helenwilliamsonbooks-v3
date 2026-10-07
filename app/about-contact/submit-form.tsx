@@ -70,5 +70,6 @@ export default async function submitForm(previousResponse: SubmitResponse, formD
             console.error(error);
             return { message: 'error', data: { name, email, message, recaptchaResponse } };
         }
-    else return { message: 'captcha-failure', data: { name, email, message, recaptchaResponse } };
+
+    return { message: 'captcha-failure', data: { name, email, message, recaptchaResponse } };
 }

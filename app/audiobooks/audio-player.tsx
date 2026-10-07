@@ -13,7 +13,7 @@ interface Properties {
 }
 
 export default function AudioPlayer({ ref, album, track, password, setIsPlaying, onEnd }: Properties) {
-    if (!album.id || !track) return <>Select a track or album to start playing!</>;
+    if (!track || !album.id) return <>Select a track or album to start playing!</>;
 
     return (
         <div className="audiobook-player-container">

@@ -6,7 +6,7 @@ import eslintNextVitals from 'eslint-config-next/core-web-vitals';
 import eslintNextTypescript from 'eslint-config-next/typescript';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
-const sharedRuleOverrides = sharedConfig.find((config) => !config.name && config.plugins && config.rules);
+const sharedRuleOverrides = sharedConfig.findLast((config) => !config.name && config.plugins && config.rules);
 
 let namingConventionRule;
 if (sharedRuleOverrides) {
@@ -28,7 +28,7 @@ export default defineConfig(
         languageOptions: { parserOptions: { project: ['./tsconfig.json'] } },
         rules: {
             'jsdoc/require-jsdoc': 'off',
-            ...(namingConventionRule ? { '@typescript-eslint/naming-convention': namingConventionRule } : {}),
+            ...(namingConventionRule && { '@typescript-eslint/naming-convention': namingConventionRule }),
             'react/jsx-pascal-case': 'warn',
             'react/jsx-sort-props': ['warn', { callbacksLast: true, shorthandLast: true, reservedFirst: true }],
             'react/self-closing-comp': 'warn',

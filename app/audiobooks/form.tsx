@@ -51,7 +51,7 @@ export default function AudiobooksForm() {
         const foundAlbum = audioTracks.find((album) => album.title === currentAlbum.title);
         if (!foundAlbum) return;
 
-        if (currentTrack.index === foundAlbum.tracks.length - 1) return;
+        if (currentTrack.index === foundAlbum.tracks.length - 1) return; // eslint-disable-line unicorn/prefer-combined-guards
 
         const nextTrack = foundAlbum.tracks[currentTrack.index + 1];
 
@@ -68,7 +68,7 @@ export default function AudiobooksForm() {
                             <div key={album.id}>
                                 <div className="audiobook-header">
                                     <FontAwesomeIcon
-                                        icon={currentAlbum.title === album.title && isPlaying ? faPauseCircle : faPlayCircle}
+                                        icon={isPlaying && currentAlbum.title === album.title ? faPauseCircle : faPlayCircle}
                                         onClick={() => {
                                             if (currentAlbum.title !== album.title)
                                                 void playTrack(
