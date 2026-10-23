@@ -98,11 +98,7 @@ export default function ContactForm() {
                     <Form.Control.Feedback type="invalid">Please add a message!</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="recaptcha-response">
-                    <ReCAPTCHA
-                        ref={reCaptchaReference}
-                        sitekey="6LcEIsgdAAAAAKsmlmaoN1znHBjYrpKqPV5Wl01L"
-                        onChange={handleReCaptchaChange}
-                    />
+                    <ReCAPTCHA ref={reCaptchaReference} sitekey={process.env.RECAPTCHA_SITE_KEY!} onChange={handleReCaptchaChange} />
                     <Form.Control
                         ref={reCaptchaResultReference}
                         className="d-none"
