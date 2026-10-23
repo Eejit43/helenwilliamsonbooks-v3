@@ -18,10 +18,10 @@ export default function AboutAndContact() {
                     <h3>Helen Williamson, Author</h3>
                     <p>
                         Helen Lorrain Williamson was born in Holywood, Northern Ireland. She received her B.A. and M.A. from Trinity College
-                        in Dublin, Ireland. For many years she taught creative writing in Charlottesville, Virginia, where she lives with
-                        her husband. She is the author of <i>Tales from Balladhoon</i>, <i>A Pineapple Dream and other Nonsense</i>,{' '}
-                        <i>Higgledy-Piggledy Thoughts</i>, <i>I Just Met A Dinosaur!</i>, <i>Adventures In Dinglewood</i>, and her newest
-                        book, <i>Tales from Balladhoon</i> (2).
+                        in Dublin, Ireland. For many years she taught creative writing in Charlottesville, Virginia. She is the author of{' '}
+                        <i>Tales from Balladhoon</i>, <i>A Pineapple Dream and other Nonsense</i>, <i>Higgledy-Piggledy Thoughts</i>,{' '}
+                        <i>I Just Met A Dinosaur!</i>, <i>Adventures In Dinglewood</i>, and her newest book, <i>Tales from Balladhoon</i>{' '}
+                        (2).
                     </p>
                     <p>
                         You can find her online on{' '}

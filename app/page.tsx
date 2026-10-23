@@ -30,9 +30,7 @@ export default function Home() {
                         have enchanted her since she was a child, and writing and telling her own stories is just a projection of this love.
                     </p>
 
-                    <p>
-                        She received her B.A. and M.A. from Trinity College in Dublin, and now lives in the United States with her husband.
-                    </p>
+                    <p>She received her B.A. and M.A. from Trinity College in Dublin, and now lives in the United States.</p>
 
                     <p>
                         Helen continues to write stories that delight readers with her amusing and playful perspective on the world. She is
